@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio of Julie Flemming: Generative Art: Express your Day!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 160vh;
+      margin: 0;
+      background-color: #b5bbc6;
+      font-family: 'Raleway', sans-serif;
+    }
+    h1 {
+      color: hsl(0, 0%, 100%);
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      -webkit-text-stroke: 2px rgb(0, 0, 0);
+      z-index: 1;
+    }
+    canvas {
+      border: 6px solid #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    input {
+      margin-bottom: 20px;
+      padding: 15px;
+      font-size: 16px;
+      border: 4px solid #ffffff;
+      border-radius: 5px;
+      width: 250px;
+      outline: none;
+      transition: all 0.3s ease;
+      background-color: #fff;
+    }
+     select {
+      margin-bottom: 20px;
+      padding: 15px;
+      font-size: 16px;
+      border: 4px solid #0e9fff;
+      border-radius: 5px;
+      width: 250px;
+      outline: none;
+      transition: all 0.3s ease;
+      background-color: #fff;
+    }
+    
+    
+    input::placeholder{
+      color: #000000;
+    }
+    input:focus, select:focus {
+      border-color: #ffffff;
+      box-shadow: 0 0 10px rgba(53, 53, 53, 0.5);
+    }
+    button {
+      padding: 15px 25px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #424040;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background-color: #f9ee55;
+    }
+    h2 {
+        font-size: 1rem;
+        font-family: 'Raleway', sans-serif;
+        color: rgb(255, 255, 255);
+    }
+    .logo {
+      position: absolute;
+      top: 110px;
+      left: 60px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .logo2
+    {
+      position:absolute;
+      top: 190px;
+      right: 130px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .logo3
+    {
+      position:absolute;
+      top: 290px;
+      right: 50px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .logo5
+    {
+      position:absolute;
+      bottom: -550px;
+      left: 50px;
+      width: 900px;
+      height: 800px;
+      z-index: -1;
+    }
+    footer {
+        font-size: 1rem;
+        font-family: 'Raleway', sans-serif;
+        color: rgb(255, 255, 255);
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Express your day!</h1>
+  <img src="d:\julie\Uni\Digitales Gestalten\gang.png" alt="Logo" class="logo">
+  <img src="d:\julie\Uni\Digitales Gestalten\sta.png" alt="Logo2" class="logo2">
+  <img src="d:\julie\Uni\Digitales Gestalten\mon.png" alt="Logo3" class="logo3">
+  <img src="d:\julie\Uni\Digitales Gestalten\R.png" alt="Logo5" class="logo5">
+  <input type="number" id="shapeCountInput" min="1" max="10" placeholder="Rate your day from 1-10">
+  <h2>How do you feel?</h2>
+  <select id="shapeTypeSelect">
+    <option value="circle">Happy</option>
+    <option value="rectangle">Sad</option>
+    <option value="triangle">Angry</option>
+    <option value="mixed">Mixed Feelings</option>
+  </select>
+  <input type="text" id="colorWordInput" maxlength="10" placeholder="Enter your Name">
+  <canvas id="artCanvas" width="800" height="600"></canvas>
+  <script src="PortfolioJulieFlemming.js"></script>
+</body>
+<footer><strong>Code by Julie Flemming, Art by you!</strong></footer>
+</html>
